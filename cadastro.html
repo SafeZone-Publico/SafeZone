@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Safe Zone</title>
+    <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="img/logo safe zone.png" alt="Safe Zone Logo" class="logo">
+            <div class="nav-buttons">
+                <a href="index.html"><button class="nav-button">Home</button></a>
+                <a href="cadastro.html"><button class="nav-button active">Cadastro</button></a>
+                <a href="esta-em-perigo.html"><button class="nav-button">Está em perigo?</button></a>
+                <a href="faq.html"><button class="nav-button">Perguntas frequentes</button></a>
+                <a href="mapa.html"><button class="nav-button">Mapa</button></a>
+                <a href="integrantes.html"><button class="nav-button">Integrantes</button></a>
+                <a href="contato.html"><button class="nav-button">Contato</button></a>
+            </div>
+        </header>
+
+        <main>
+            <form class="cadastro-form" novalidate>
+                <div class="form-group">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" name="nome">
+                    <span class="error-message" id="nome-error" style="display: none;"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email">
+                     <span class="error-message" id="email-error" style="display: none;"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha">
+                     <span class="error-message" id="senha-error" style="display: none;"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmar-senha">Confirmar Senha</label>
+                    <input type="password" id="confirmar-senha" name="confirmar-senha">
+                     <span class="error-message" id="confirmar-senha-error" style="display: none;"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone">
+                     <span class="error-message" id="telefone-error" style="display: none;"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="endereco">Endereço</label>
+                    <input type="text" id="endereco" name="endereco">
+                     <span class="error-message" id="endereco-error" style="display: none;"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" id="cidade" name="cidade">
+                     <span class="error-message" id="cidade-error" style="display: none;"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="estado">Estado</label>
+                    <select id="estado" name="estado">
+                        <option value="">Selecione um estado</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                     <span class="error-message" id="estado-error" style="display: none;"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="cep">CEP</label>
+                    <input type="text" id="cep" name="cep">
+                     <span class="error-message" id="cep-error" style="display: none;"></span>
+                </div>
+
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="termos" name="termos">
+                    <label for="termos"><span>Li e aceito os <a href="#">termos de uso</a> e política de privacidade</span></label>
+                    <span id="terms-error-message" class="error-message" style="display: none;">Marque esta caixa se deseja continuar.</span>
+                </div>
+
+                <button type="submit" class="submit-button">Cadastrar</button>
+            </form>
+        </main>
+
+        <div class="footer-filler">
+            <p>&copy; 2025 SafeZone</p>
+            <div>
+                <img src="img/logo safe zone fonte esquerda.png" alt="Safe Zone Logo">
+            </div>
+        </div>
+    </div>
+
+    <div id="terms-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Termos de Uso do Projeto SafeZone</h2>
+            <p>Bem-vindo(a) ao SafeZone. Ao utilizar nossa plataforma, você concorda com os seguintes termos:</p>
+            
+            <p><strong>1. Objetivo:</strong> O SafeZone é uma ferramenta colaborativa para compartilhamento e visualização de informações sobre desastres naturais e emergências. As informações fornecidas pelos usuários são para referência e colaboração da comunidade.</p>
+            
+            <p><strong>2. Conteúdo do Usuário:</strong> Você é responsável pelas informações e alertas que compartilha. Não compartilhe informações falsas ou que possam causar pânico desnecessário.</p>
+            
+            <p><strong>3. Precisão das Informações:</strong> O SafeZone se esforça para ser útil, mas não garante a precisão ou a tempestividade de todos os alertas. Sempre verifique as informações com fontes oficiais.</p>
+            
+            <p><strong>4. Privacidade:</strong> Respeitamos sua privacidade. Suas informações serão utilizadas conforme nossa Política de Privacidade. Ao compartilhar sua localização ou outros dados, você consente com o seu uso para os fins da plataforma.</p>
+            
+            <p><strong>5. Uso Adequado:</strong> A plataforma deve ser usada de forma responsável e legal. É proibido o uso para atividades maliciosas, difamatórias ou que violem direitos de terceiros.</p>
+            
+            <p><strong>6. Isenção de Responsabilidade:</strong> O SafeZone não se responsabiliza por quaisquer danos ou perdas decorrentes do uso ou da incapacidade de usar a plataforma ou das informações nela contidas.</p>
+            
+            <p><strong>7. Modificações:</strong> Estes Termos de Uso podem ser atualizados. O uso contínuo da plataforma após as modificações constitui aceitação dos novos termos.</p>
+            
+            <p>Ao utilizar o SafeZone, você reconhece que esta plataforma é uma ferramenta de apoio e não substitui os serviços de emergência oficiais.</p>
+            
+            <p>Obrigado por contribuir para uma comunidade mais segura.</p>
+
+            <div class="modal-buttons">
+                <button id="decline-terms" class="button decline">Recusar</button>
+                <button id="accept-terms" class="button accept">Aceitar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/cadastro.js"></script>
+</body>
+</html> 

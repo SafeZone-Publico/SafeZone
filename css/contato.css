@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    min-height: 100vh;
+    color: #ffffff;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/fundo rosa dos ventos.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.2;
+    z-index: 0;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: transparent;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 150px;
+    width: auto;
+    display: block;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    background-color: transparent;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.nav-buttons a {
+    display: flex;
+    align-items: center;
+    text-decoration: none !important;
+}
+
+.nav-button {
+    padding: 0.8rem 1.5rem;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    min-width: 150px;
+    box-shadow: 0 0 5px rgba(255,255,255,0.2);
+    outline: none;
+    flex-shrink: 0;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.nav-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 0 8px rgba(255,255,255,0.4);
+}
+
+.nav-button.active {
+    background-color: white;
+    color: black;
+    border-color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.contato-form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    font-size: 1rem;
+    background-color: #333;
+    color: #ffffff;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+input.error, textarea.error {
+    border-color: #ff4444;
+    box-shadow: 0 0 5px rgba(255, 68, 68, 0.5);
+}
+
+.submit-button {
+    width: 100%;
+    padding: 1rem;
+    background: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background: #357abd;
+}
+
+.error-message {
+    color: #ffffff;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    display: none;
+}
+
+.footer-filler {
+    background-color: #0a0a0a;
+    color: white;
+    padding: 0.15rem 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    font-size: 0.9rem;
+}
+
+.footer-filler img {
+    height: 70px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 1rem;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        height: 80px;
+        margin-bottom: 1rem;
+    }
+
+    .nav-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contato-form {
+        padding: 1rem;
+    }
+} 
