@@ -6,13 +6,13 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 const incidentIcons = {
     fallen_tree: L.icon({
-        iconUrl: 'img/icones/arvore caida.png',
+        iconUrl: 'img/icones/arvore-caida.png',
         iconSize: [32, 32],
         iconAnchor: [16, 32],
         popupAnchor: [0, -32]
     }),
     heat_wave: L.icon({
-        iconUrl: 'img/icones/calor intenso.png',
+        iconUrl: 'img/icones/calor-intenso.png',
         iconSize: [32, 32],
         iconAnchor: [16, 32],
         popupAnchor: [0, -32]
@@ -24,7 +24,7 @@ const incidentIcons = {
         popupAnchor: [0, -32]
     }),
     high_waves: L.icon({
-        iconUrl: 'img/icones/ondas grandes.png',
+        iconUrl: 'img/icones/ondas-grandes.png',
         iconSize: [32, 32],
         iconAnchor: [16, 32],
         popupAnchor: [0, -32]
@@ -98,10 +98,10 @@ iconContainer.className = 'draggable-icons';
 document.querySelector('.map-controls').appendChild(iconContainer);
 
 const iconFileNames = {
-    'fallen_tree': 'arvore caida.png',
-    'heat_wave': 'calor intenso.png',
+    'fallen_tree': 'arvore-caida.png',
+    'heat_wave': 'calor-intenso.png',
     'fire': 'fogo.png',
-    'high_waves': 'ondas grandes.png',
+    'high_waves': 'ondas-grandes.png',
     'storm': 'tempestade.png',
     'tornado': 'tornado.png'
 };
@@ -181,10 +181,10 @@ function updateMarkerVisibility() {
         const iconFileName = marker.options.icon.options.iconUrl.split('/').pop().replace('.png', '');
         
         const fileNameToTypeMap = {
-            'arvore caida': 'fallen_tree',
-            'calor intenso': 'heat_wave',
+            'arvore-caida': 'fallen_tree',
+            'calor-intenso': 'heat_wave',
             'fogo': 'fire',
-            'ondas grandes': 'high_waves',
+            'ondas-grandes': 'high_waves',
             'tempestade': 'storm',
             'tornado': 'tornado'
         };
@@ -281,7 +281,7 @@ confirmDeleteYesButton.addEventListener('click', function() {
             marker.getPopup().setContent(`
                 <div class="popup-content">
                     <div class="popup-info">
-                        <strong>Tipo:</strong>${incidentTypeNamesPT[marker.options.icon.options.iconUrl.split('/').pop().replace('.png', '').replace('arvore caida', 'fallen_tree').replace('calor intenso', 'heat_wave').replace('ondas grandes', 'high_waves')] || 'Desconhecido'}<br>
+                        <strong>Tipo:</strong>${incidentTypeNamesPT[marker.options.icon.options.iconUrl.split('/').pop().replace('.png', '').replace('arvore-caida', 'fallen_tree').replace('calor-intenso', 'heat_wave').replace('ondas-grandes', 'high_waves')] || 'Desconhecido'}<br>
                         <strong>Descrição:</strong>${marker.getPopup().getContent().split('Descrição:</strong>')[1].split('<br>')[0]}<br>
                         <strong>Severidade:</strong>${severityNamesPT[marker.getPopup().getContent().split('Severidade:</strong>')[1].split('</div>')[0]] || 'Desconhecido'}
                     </div>

@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro - Safe Zone</title>
     <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="icon" type="image/png" href="img/logo-marca-safe-zone.png">
+    <script src="js/cadastro.js" defer></script>
 </head>
 <body>
     <div class="container">
         <header>
-            <img src="img/logo safe zone.png" alt="Safe Zone Logo" class="logo">
+            <a href="index.html">
+                <img src="img/logo-safe-zone.png" alt="Safe Zone Logo" class="logo">
+            </a>
             <div class="nav-buttons">
                 <a href="index.html"><button class="nav-button">Home</button></a>
                 <a href="cadastro.html"><button class="nav-button active">Cadastro</button></a>
@@ -26,43 +30,43 @@
                 <div class="form-group">
                     <label for="nome">Nome Completo</label>
                     <input type="text" id="nome" name="nome">
-                    <span class="error-message" id="nome-error" style="display: none;"></span>
+                    <span class="error-message" id="nome-error"></span>
                 </div>
 
                 <div class="form-group">
                     <label for="email">E-mail</label>
                     <input type="email" id="email" name="email">
-                     <span class="error-message" id="email-error" style="display: none;"></span>
+                     <span class="error-message" id="email-error"></span>
                 </div>
 
                 <div class="form-group">
                     <label for="senha">Senha</label>
                     <input type="password" id="senha" name="senha">
-                     <span class="error-message" id="senha-error" style="display: none;"></span>
+                     <span class="error-message" id="senha-error"></span>
                 </div>
 
                 <div class="form-group">
                     <label for="confirmar-senha">Confirmar Senha</label>
                     <input type="password" id="confirmar-senha" name="confirmar-senha">
-                     <span class="error-message" id="confirmar-senha-error" style="display: none;"></span>
+                     <span class="error-message" id="confirmar-senha-error"></span>
                 </div>
 
                 <div class="form-group">
                     <label for="telefone">Telefone</label>
                     <input type="tel" id="telefone" name="telefone">
-                     <span class="error-message" id="telefone-error" style="display: none;"></span>
+                     <span class="error-message" id="telefone-error"></span>
                 </div>
 
                 <div class="form-group">
                     <label for="endereco">Endereço</label>
                     <input type="text" id="endereco" name="endereco">
-                     <span class="error-message" id="endereco-error" style="display: none;"></span>
+                     <span class="error-message" id="endereco-error"></span>
                 </div>
 
                 <div class="form-group">
                     <label for="cidade">Cidade</label>
                     <input type="text" id="cidade" name="cidade">
-                     <span class="error-message" id="cidade-error" style="display: none;"></span>
+                     <span class="error-message" id="cidade-error"></span>
                 </div>
 
                 <div class="form-group">
@@ -97,31 +101,31 @@
                         <option value="SE">Sergipe</option>
                         <option value="TO">Tocantins</option>
                     </select>
-                     <span class="error-message" id="estado-error" style="display: none;"></span>
+                     <span class="error-message" id="estado-error"></span>
                 </div>
 
                 <div class="form-group">
                     <label for="cep">CEP</label>
                     <input type="text" id="cep" name="cep">
-                     <span class="error-message" id="cep-error" style="display: none;"></span>
+                     <span class="error-message" id="cep-error"></span>
                 </div>
 
                 <div class="form-group checkbox">
                     <input type="checkbox" id="termos" name="termos">
                     <label for="termos"><span>Li e aceito os <a href="#">termos de uso</a> e política de privacidade</span></label>
-                    <span id="terms-error-message" class="error-message" style="display: none;">Marque esta caixa se deseja continuar.</span>
+                    <span id="terms-error-message" class="error-message">Marque esta caixa se deseja continuar.</span>
                 </div>
 
                 <button type="submit" class="submit-button">Cadastrar</button>
             </form>
         </main>
 
-        <div class="footer-filler">
+        <footer class="footer-filler">
             <p>&copy; 2025 SafeZone</p>
             <div>
-                <img src="img/logo safe zone fonte esquerda.png" alt="Safe Zone Logo">
+                <img src="img/logo-safe-zone-fonte-esquerda.png" alt="Safe Zone Logo">
             </div>
-        </div>
+        </footer>
     </div>
 
     <div id="terms-modal" class="modal">
@@ -154,7 +158,6 @@
             </div>
         </div>
     </div>
-
-    <script src="js/cadastro.js"></script>
+    
 </body>
 </html> 

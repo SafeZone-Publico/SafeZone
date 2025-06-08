@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato - Safe Zone</title>
     <link rel="stylesheet" href="css/contato.css">
+    <link rel="icon" type="image/png" href="img/logo-marca-safe-zone.png">
+    <script src="js/contato.js" defer></script>
 </head>
 <body>
     <div class="container">
         <header>
-            <img src="img/logo safe zone.png" alt="Safe Zone Logo" class="logo">
+            <a href="index.html">
+                <img src="img/logo-safe-zone.png" alt="Safe Zone Logo" class="logo">
+            </a>
             <div class="nav-buttons">
                 <a href="index.html"><button class="nav-button">Home</button></a>
                 <a href="cadastro.html"><button class="nav-button">Cadastro</button></a>
@@ -26,33 +30,32 @@
                 <div class="form-group">
                     <label for="nome">Nome</label>
                     <input type="text" id="nome" name="nome" required>
-                    <span class="error-message" id="nome-error" style="display: none;"></span>
+                    <span class="error-message" id="nome-error"></span>
                 </div>
 
                 <div class="form-group">
                     <label for="email">E-mail</label>
                     <input type="email" id="email" name="email" required>
-                    <span class="error-message" id="email-error" style="display: none;"></span>
+                    <span class="error-message" id="email-error"></span>
                 </div>
 
                 <div class="form-group">
                     <label for="mensagem">Mensagem</label>
                     <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-                    <span class="error-message" id="mensagem-error" style="display: none;"></span>
+                    <span class="error-message" id="mensagem-error"></span>
                 </div>
 
                 <button type="submit" class="submit-button">Enviar Contato</button>
             </form>
         </main>
 
-        <div class="footer-filler">
+        <footer class="footer-filler">
             <p>&copy; 2025 SafeZone</p>
             <div>
-                <img src="img/logo safe zone fonte esquerda.png" alt="Safe Zone Logo">
+                <img src="img/logo-safe-zone-fonte-esquerda.png" alt="Safe Zone Logo">
             </div>
-        </div>
+        </footer>
     </div>
 
-    <script src="js/contato.js"></script>
 </body>
-</html> 
+</html>

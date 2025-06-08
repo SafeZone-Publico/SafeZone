@@ -9,11 +9,18 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
     crossorigin=""/>
+    <link rel="icon" type="image/png" href="img/logo-marca-safe-zone.png">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin="" defer></script>
+    <script src="js/mapa.js" defer></script>
 </head>
 <body>
     <div class="container">
         <header>
-            <img src="img/logo safe zone.png" alt="Safe Zone Logo" class="logo">
+            <a href="index.html">
+                <img src="img/logo-safe-zone.png" alt="Safe Zone Logo" class="logo">
+            </a>
             <div class="nav-buttons">
                 <a href="index.html"><button class="nav-button">Home</button></a>
                 <a href="cadastro.html"><button class="nav-button">Cadastro</button></a>
@@ -46,12 +53,12 @@
             </div>
         </main>
 
-        <div class="footer-filler">
+        <footer class="footer-filler">
             <p>&copy; 2025 SafeZone</p>
             <div>
-                <img src="img/logo safe zone fonte esquerda.png" alt="Safe Zone Logo">
+                <img src="img/logo-safe-zone-fonte-esquerda.png" alt="Safe Zone Logo">
             </div>
-        </div>
+        </footer>
     </div>
 
     <div id="report-modal" class="modal">
@@ -101,10 +108,6 @@
             </div>
         </div>
     </div>
-
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-    crossorigin=""></script>
-    <script src="js/mapa.js"></script>
+    
 </body>
 </html> 

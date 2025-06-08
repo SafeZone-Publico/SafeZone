@@ -522,6 +522,7 @@ footer img {
 }
 
 .error-message {
+    display: none;
     color: #f44336;
     font-size: 0.85rem;
     margin-top: 0.3rem;

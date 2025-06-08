@@ -83,8 +83,9 @@ header {
     cursor: pointer;
     transition: all 0.3s ease;
     font-size: 1rem;
-    min-width: 150px;
-    width: 180px;
+    width: 220px;
+    min-width: 220px;
+    max-width: 220px;
     box-shadow: 0 0 5px rgba(255,255,255,0.2);
     outline: none;
     flex-shrink: 0;
@@ -289,8 +290,9 @@ header {
     }
 
     .nav-button {
-        min-width: auto;
-        width: 80%;
+        width: 220px;
+        min-width: 220px;
+        max-width: 220px;
         margin: 0 auto;
     }
 
@@ -337,8 +339,9 @@ header {
     }
 
     .nav-button {
-        min-width: 150px;
-        width: auto;
+        width: 220px;
+        min-width: 220px;
+        max-width: 220px;
     }
 }
 
@@ -352,8 +355,9 @@ header {
     }
 
     .nav-button {
-        min-width: 160px;
-        padding: 0.9rem 1.8rem;
+        width: 220px;
+        min-width: 220px;
+        max-width: 220px;
     }
 }
 
@@ -368,8 +372,9 @@ header {
     }
 
     .nav-button {
-        min-width: 180px;
-        padding: 1rem 2rem;
+        width: 220px;
+        min-width: 220px;
+        max-width: 220px;
     }
 
     .main-content {
@@ -396,7 +401,9 @@ header {
     }
 
     .nav-button {
-        min-width: 200px;
+        width: 220px;
+        min-width: 220px;
+        max-width: 220px;
     }
 
     .main-content {

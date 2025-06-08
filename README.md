@@ -52,7 +52,8 @@ SafeZone/
 │   └── mapa.css        # Estilos do mapa interativo
 ├── js/
 │   ├── cadastro.js     # Lógica do formulário de cadastro
-│   └── mapa.js         # Lógica do mapa interativo
+│   ├── mapa.js         # Lógica do mapa interativo
+│   └── contato.js      # Lógica do formulário de contato
 ├── img/
 │   ├── icones/         # Ícones para os marcadores do mapa
 │   ├── participantes/  # Fotos e ícones dos participantes
@@ -61,20 +62,22 @@ SafeZone/
 │   │   ├── geovanne.png
 │   │   ├── linkedin.png
 │   │   └── github.png
-│   ├── logo safe zone.png
-│   ├── logo direita.png
-│   ├── logo safe zone fonte esquerda.png
+│   ├── logo-safe-zone.png
+│   ├── logo-direita.png
+│   ├── logo-safe-zone-fonte-esquerda.png
+│   ├── logo-marca-safe-zone.png   # Favicon do site
 │   ├── mapa.png
 │   ├── grupo-de-usuarios.png
-│   ├── fundo rosa dos ventos.png
+│   ├── fundo-rosa-dos-ventos.png
 │   └── alerta.png
 ├── videos/
-│   └── fumaça.mp4      # Vídeo de fundo da página inicial
+│   └── fumaca.mp4      # Vídeo de fundo da página inicial
 ├── index.html          # Página inicial
 ├── cadastro.html       # Página de cadastro
-├── mapa.html          # Página do mapa interativo
-├── faq.html           # Perguntas frequentes
-└── integrantes.html   # Página dos integrantes do projeto
+├── mapa.html           # Página do mapa interativo
+├── faq.html            # Perguntas frequentes
+├── integrantes.html    # Página dos integrantes do projeto
+└── contato.html        # Página de contato
 ```
 
 ## Como Usar
